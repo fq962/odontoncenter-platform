@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 import Head from "next/head";
 
 export const Hero = ({ children }: PropsWithChildren) => (
-  <main className="mx-auto max-w-screen-lg pt-12 flex flex-col gap-12 px-4 mb-25 xl:mb-0">
+  <main className="min-h-screen mx-auto max-w-screen-lg flex flex-col items-center justify-center gap-12 px-4 mb-25 xl:mb-0 overflow-hidden">
     <Head>
       <title>
         Palette Wizard - AI-powered tool that turns your ideas into stunning
