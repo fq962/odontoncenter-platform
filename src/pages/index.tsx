@@ -2,6 +2,7 @@
 import { Hero } from "@/components/layout/Hero";
 import { motion } from "framer-motion";
 import Login from "./login/Login";
+import Dashboard from "./home/Home";
 
 // import TailwindApiSection from "@/components/TailwindApiSection";
 
@@ -15,6 +16,7 @@ export default function Home() {
     >
       <Hero>
         <Login />
+        {/* <Dashboard /> */}
       </Hero>
     </motion.div>
   );
