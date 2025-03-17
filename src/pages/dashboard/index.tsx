@@ -16,7 +16,7 @@ export default function Dashboard() {
         id="default-sidebar"
         className="overlay sm:shadow-none overlay-open:translate-x-0 drawer drawer-start hidden max-w-64 sm:absolute sm:z-0 sm:flex sm:translate-x-0"
         role="dialog"
-        tabindex="-1"
+        tabIndex={-1}
       >
         <div className="drawer-body px-2 pt-4 flex flex-col h-full">
           <ul className="menu p-0 flex-grow">

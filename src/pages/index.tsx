@@ -2,7 +2,7 @@
 import { Hero } from "@/components/layout/Hero";
 import { motion } from "framer-motion";
 import Login from "./login/Login";
-import Dashboard from "./home/Home";
+// import Dashboard from "./home/Dashboard";
 
 // import TailwindApiSection from "@/components/TailwindApiSection";
 

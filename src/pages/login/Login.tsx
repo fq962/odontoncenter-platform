@@ -1,11 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation"; // Importar useRouter
 
 // import { useState } from "react";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter(); // Instancia del router
+
+  // Simular autenticación y redirigir
+  const handleLogin = () => {
+    // Aquí iría la lógica de autenticación real
+    console.log("Usuario autenticado, redirigiendo...");
+    router.push("/dashboard"); // Redirige al Dashboard
+  };
 
   return (
     <div className="card sm:max-w-sm flex items-center align-middle gap-6 p-8">
@@ -61,7 +71,9 @@ export default function Login() {
           </span>
         </div>
 
-        <button className="btn w-72">Log In</button>
+        <button onClick={handleLogin} className="btn w-72">
+          Log In
+        </button>
       </div>
     </div>
   );
