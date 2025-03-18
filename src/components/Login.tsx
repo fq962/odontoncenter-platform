@@ -1,17 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
-
-import { useState } from "react";
-import { useRouter } from "next/navigation"; // Importar useRouter
-import { supabase } from "@/utils/supabaseClient";
-import bcrypt from "bcryptjs";
 import {
   showErrorToast,
   showInfoToast,
   ToastAlert,
 } from "@/constants/toast-alerts";
-
-// import { useState } from "react";
+import { supabase } from "@/utils/supabaseClient";
+import bcrypt from "bcryptjs";
+import { useRouter } from "next/router";
+import { useState } from "react";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -54,7 +50,6 @@ export default function Login() {
     console.log(`Usuario ${usuario} autenticado con ID: ${id}`);
     router.push("/dashboard");
   };
-
   return (
     <>
       <ToastAlert richColors closeButton position="top-right" />
